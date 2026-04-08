@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+}
+.div1{
+    justify-content: center;
+    align-items: center;
+}
+
+    body {
+
+      display: flex;
+      justify-content: center; /* centraliza horizontal */
+      align-items: center;     /* centraliza vertical */
+      height: 100vh;
+    }
+    p{
+        color: aliceblue;
+    }
+    input {
+      padding: 10px;
+      border-radius: 20px; /* borda redonda */
+      border: 1px solid #ccc;
+      outline: none;
+      width: 200px;
+    }
+     button {
+      padding: 10px 20px;
+      border-radius: 20px; /* borda redonda */
+      border: none;
+      background-color: #4CAF50; /* cor do botão */
+      color: white;
+      cursor: pointer;
+    }
+     button:hover {
+      background-color: #45a049; /* efeito ao passar o mouse */
+    }
+
+
