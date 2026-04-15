@@ -6,20 +6,57 @@ svg{
 *{margin:0;
 box-sizing:border-box;
 font-family: "Quicksand", sans-serif;}
-body{display:flex;
+body{
 background-color: black;
 }
 
-header{background-color: black; height: 660vh;
-width: 14%;
-background-color: black;}
-main{background-image: url(img_9.jpg.webp);
-width: 86%;
-background-size: 100%;
-height: 100vh;
+header{background-color: rgb(255, 255, 255); height: 10px;
+
+background-color: black;
+width: 100%;              
+    height: 60px;             
+    position: fixed;           
+    top: 0;
+    left: 0;
+    z-index: 1000;             
+    display: flex;
+    align-items: center;
+    
+}
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 0 5%;
 }
 
-#welcome{height: 100vh;
+
+.menu-itens {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-itens li {
+    margin: 0 15px;
+}
+
+.menu-itens a {
+    color: black; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;}
+main{background-image: url(img_9.jpg.webp);
+width: 86%;
+background-size: 60%;
+height: 300vh;
+
+
+}
+
+#welcome{height: 80vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -48,7 +85,7 @@ svg:hover{fill:#df0e62;}
     overflow: hidden;
 }
 
-/* imagem normal */
+
 #image03 {
     width: 100%;
     height: 100%;
@@ -152,6 +189,241 @@ input{
 
 #nome{
     display: flex;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: black;
+    width: 100%;             
+    height: 60px;            
+    position: fixed;          
+    top: 0;
+    left: 0;
+    z-index: 1000;            
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 0 5%;
+}
+
+.menu-itens {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-itens li {
+    margin: 0 15px;
+}
+
+.menu-itens a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+main{
+    background-image: url(img_9.jpg.webp);
+    width: 100%;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#welcome{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction:column;
+    backdrop-filter: brightness(50%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+#welcome p{
+    width: 80%;
+}
+
+svg{
+    height: 20px;
+    margin: 15px;
+    fill: rgb(204, 159, 159);
+}
+
+svg:hover{
+    fill:#df0e62;
+}
+
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.imagens div {
+    width: 30%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#image03 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    transition: 0.3s;
+}
+
+#image03:hover {
+    filter: brightness(40%);
+    transform: scale(1.05); 
+}
+
+#imagen2{
+    text-align: center;
+    border-radius: 50%;
+    width: 400px;
+}
+
+h1{
+    color: aliceblue;
+}
+
+#TESTIMONIAL{
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    color: aliceblue;
+}
+
+#imagen4{
+    text-align: center;
+    width: 300px;
+}
+
+#jer{
+    margin: auto;
+    color: aliceblue;
+}
+
+.text6{
+    color: #808080;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.biografia{
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 3% 20%;
+}
+
+.item{
+    color: #808080 ;
+}
+
+.listas{
+    display: flex;
+}
+
+.blog{
+    color: white;
+}
+
+#blog_top{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.img_baixa{
+    width: 300px;
+    height: 200px;
+}
+
+#texto_menor{
+    text-align: center;
+}
+
+#espaco_div{
+    padding-top: 200px;
+}
+
+#roda_pe{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btncontato{
+    background-color: #df0e62;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        position: relative;
+    }
+
+    .menu {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .menu-itens {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-itens li {
+        margin: 5px 0;
+    }
+
+    .imagens div {
+        width: 100%;
+        height: auto;
+    }
+
+    .biografia {
+        padding: 5% 5%;
+    }
+
+    .listas {
+        flex-direction: column;
+    }
+
+    #imagen2, #imagen4 {
+        width: 100%;
+    }
 }
 
 
