@@ -1,0 +1,144 @@
+{
+  "trabalhos": [
+    {
+      "id": "1",
+      "titulo": "Ensaio Urbano Moderno",
+      "descricaoCurta": "A pulsação da cidade grande através de lentes analógicas.",
+      "descricaoCompleta": "Trabalho comercial capturando a arquitetura brutalista das metrópoles e a relação humana com o concreto.",
+      "imagem": "IMG_0006.jpeg",
+      "categoria": "Urbano",
+      "valor": "R$ 450,00",
+      "tags": ["Contraste", "Rua", "Arquitetura"],
+      "destaque": true,
+      "autor": "Jed",
+      "data": "2026-05-10"
+    },
+    {
+      "id": "2",
+      "titulo": "Studio Minimalista",
+      "descricaoCurta": "Foco em formas puras, linhas e iluminação altamente controlada.",
+      "descricaoCompleta": "Trabalho realizado em estúdio fechado com fundo infinito escuro para realçar silhuetas e expressões marcantes.",
+      "imagem": "IMG_0006.jpeg",
+      "categoria": "Estúdio",
+      "valor": "R$ 600,00",
+      "tags": ["Minimalismo", "Luz", "Sombra"],
+      "destaque": true,
+      "autor": "Jed",
+      "data": "2026-05-12"
+    },
+    {
+      "id": "3",
+      "titulo": "Olhar Editorial",
+      "descricaoCurta": "Fotografias conceituais voltadas para capas de revistas de moda.",
+      "descricaoCompleta": "Um ensaio focado no vestuário de alta costura misturado com expressões frias e ângulos não convencionais.",
+      "imagem": "IMG_0011.jpeg",
+      "categoria": "Moda",
+      "valor": "R$ 850,00",
+      "tags": ["Conceitual", "Moda", "Alta Costura"],
+      "destaque": false,
+      "autor": "Jed",
+      "data": "2026-05-15"
+    },
+    {
+      "id": "4",
+      "titulo": "Sombras da Noite",
+      "descricaoCurta": "Ensaios noturnos utilizando apenas iluminação neon das vitrines.",
+      "descricaoCompleta": "Exploração de reflexos em poças de água e vidraças comerciais na madrugada com cores vibrantes azul e rosa.",
+      "imagem": "IMG_0004.jpeg",
+      "categoria": "Cenário Noturno",
+      "valor": "R$ 500,00",
+      "tags": ["Neon", "Noturno", "Cyberpunk"],
+      "destaque": false,
+      "autor": "Jed",
+      "data": "2026-05-18"
+    },
+    {
+      "id": "5",
+      "titulo": "Textura Fria",
+      "descricaoCurta": "Uma visão analítica aproximada sobre elementos naturais.",
+      "descricaoCompleta": "Ensaio focado em macrofotografia revelando detalhes de superfícies ásperas, rochas e cristais do ambiente.",
+      "imagem": "IMG_0005.jpeg",
+      "categoria": "Natureza",
+      "valor": "R$ 350,00",
+      "tags": ["Macro", "Texturas", "Natureza"],
+      "destaque": false,
+      "autor": "Jed",
+      "data": "2026-05-20"
+    },
+    {
+      "id": "6",
+      "titulo": "Retratos em P&B",
+      "descricaoCurta": "A expressividade máxima através da ausência total de cores.",
+      "descricaoCompleta": "Fotografias em preto e branco focadas estritamente nas linhas de expressão facial e contrastes intensos.",
+      "imagem": "IMG_0007.jpeg",
+      "categoria": "Retratos",
+      "valor": "R$ 400,00",
+      "tags": ["Monocromático", "Expressão", "Retrato"],
+      "destaque": false,
+      "autor": "Jed",
+      "data": "2026-05-22"
+    },
+    {
+      "id": "7",
+      "titulo": "Luz do Crepúsculo",
+      "descricaoCurta": "A hora de ouro capturada em campos abertos.",
+      "descricaoCompleta": "Sessão de fotos externas aproveitando os últimos raios de sol do dia para criar silhuetas quentes e dramáticas.",
+      "imagem": "IMG_0008.jpeg",
+      "categoria": "Natureza",
+      "valor": "R$ 550,00",
+      "tags": ["Golden Hour", "Externo", "Quente"],
+      "destaque": true,
+      "autor": "Jed",
+      "data": "2026-05-24"
+    },
+    {
+      "id": "8",
+      "titulo": "Expressão Corporal",
+      "descricaoCurta": "Movimento e fluidez congelados em alta velocidade.",
+      "descricaoCompleta": "Ensaio com bailarinos profissionais explorando saltos, poeira cênica e iluminação estroboscópica lateral.",
+      "imagem": "IMG_0009 (1).jpeg",
+      "categoria": "Estúdio",
+      "valor": "R$ 700,00",
+      "tags": ["Dança", "Movimento", "Estúdio"],
+      "destaque": false,
+      "autor": "Jed",
+      "data": "2026-05-25"
+    },
+    {
+      "id": "9",
+      "titulo": "Geometria Urbana",
+      "descricaoCurta": "Linhas simétricas e padrões escondidos nas fachadas da cidade.",
+      "descricaoCompleta": "Série fotográfica focada no minimalismo arquitetônico urbano contemporâneo e perspectivas de fuga simétricas.",
+      "imagem": "IMG_0007.jpeg",
+      "categoria": "Urbano",
+      "valor": "R$ 480,00",
+      "tags": ["Simetria", "Arquitetura", "Linhas"],
+      "destaque": false,
+      "autor": "Jed",
+      "data": "2026-05-26"
+    },
+    {
+      "id": "10",
+      "titulo": "Simplicidade Cotidiana",
+      "descricaoCurta": "A beleza sutil dos momentos ordinários do dia a dia.",
+      "descricaoCompleta": "Fotografia documental registrando interações humanas espontâneas em feiras livres e cafeterias locais.",
+      "imagem": "IMG_0004.jpeg",
+      "categoria": "Retratos",
+      "valor": "R$ 380,00",
+      "tags": ["Documental", "Cotidiano", "Espontâneo"],
+      "destaque": false,
+      "autor": "Jed",
+      "data": "2026-05-28"
+    }
+    
+  ],
+  "categorias": [
+    { "id": 1, "nome": "Urbano" },
+    { "id": 2, "nome": "Estúdio" },
+    { "id": 3, "nome": "Moda" },
+    { "id": 4, "nome": "Cenário Noturno" },
+    { "id": 5, "nome": "Natureza" },
+    { "id": 6, "nome": "Retratos" }
+  ]
+  
+}

@@ -159,3 +159,74 @@ window.onload = () => {
     carregarHome();
     carregarDetalhes();
 };
+const API_URL = "http://localhost:3000/trabalhos";
+
+
+async function fetchItems() {
+    try {
+        const response = await fetch(API_URL);
+        if (!response.ok) throw new Error("Erro ao buscar dados do servidor.");
+        return await response.json();
+    } catch (error) {
+        console.error("Erro na requisição:", error);
+        return [];
+    }
+}
+
+
+function createCard(item) {
+    return `
+        <div class="col-12 col-md-6 col-lg-4 card-trabalho mb-4">
+            <div class="card p-2 h-100 shadow-sm" style="background: #1a1a1a; color: #fff; border: 1px solid #333;">
+                <a href="details.html?id=${item.id}">
+                    <img src="${item.imagem}" class="card-img-top" alt="${item.titulo}" style="height: 250px; object-fit: cover;">
+                </a>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <span class="badge bg-secondary mb-2">${item.categoria}</span>
+                        <h3 class="h5 card-title">${item.titulo}</h3>
+                        <p class="card-text text-muted" style="font-size: 14px;">${item.descricaoCurta}</p>
+                    </div>
+                    <div class="mt-3">
+                        <p class="fw-bold mb-2" style="color: #df0e62;">${item.valor}</p>
+                        <a href="details.html?id=${item.id}" class="btn btn-sm w-100" style="background-color: #df0e62; color: white;">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+
+function renderCards(items) {
+    const gridPortfolio = document.getElementById('grid-portfolio');
+    if (gridPortfolio) {
+        if (items.length === 0) {
+            gridPortfolio.innerHTML = '<p class="text-white text-center w-100">Nenhum item encontrado.</p>';
+        } else {
+            gridPortfolio.innerHTML = items.map(item => createCard(item)).join('');
+        }
+    }
+    
+    const containerCarrossel = document.getElementById('conteudo-carrossel');
+    if (containerCarrossel) {
+        const itensDestaque = items.filter(t => t.destaque);
+        containerCarrossel.innerHTML = itensDestaque.map((item, index) => `
+            <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                <img src="${item.imagem}" class="d-block w-100" alt="${item.titulo}" style="max-height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.6); padding: 15px; border-radius: 8px;">
+                    <h5>${item.titulo}</h5>
+                    <p>${item.descricaoCurta}</p>
+                    <a href="details.html?id=${item.id}" class="btn btn-sm btn-danger">Acessar Detalhes</a>
+                </div>
+            </div>
+        `).join('');
+    }
+}
+
+async function init() {
+    const items = await fetchItems();
+    renderCards(items);
+}
+
+window.onload = init;
